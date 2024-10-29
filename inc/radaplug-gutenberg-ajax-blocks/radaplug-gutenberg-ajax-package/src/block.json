@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "radaplug/ajax-sections",
+	"version": "0.1.0",
+	"title": "Ajax Sections by Radaplug",
+	"category": "widgets",
+	"description": "Loads content of supported post types via Ajax after page loads, very usefull for achieving lower load times, specially when there are dynamic contents ...",
+	"example": {},
+	"attributes": {
+		"post_type": {
+			"type": "string"
+		},
+		"post": {
+			"type": "string"
+		},
+		"radaplug_load_via_ajax": {
+			"type": "boolean"
+		},
+		"delay": {
+			"type": "string"
+		},
+		"button": {
+			"type": "string"
+		},
+		"spinner": {
+			"type": "boolean"
+		},
+		"radaplug_entrance_animation": {
+			"type": "string"
+		},
+		"radaplug_animation_duration": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "ajax-sections",
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}
